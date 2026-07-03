@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Yaseen Ed</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .serif-font { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-[#FAF9F6] text-[#2C2C2C]">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="serif-font text-2xl font-bold tracking-widest text-[#B59410]">YASEEN ED</a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm tracking-wider uppercase">
+                <a href="index.html" class="hover:text-[#B59410] transition">Home</a>
+                <a href="about.html" class="text-[#B59410]">About</a>
+                <a href="services.html" class="hover:text-[#B59410] transition">Services</a>
+                <a href="gallery.html" class="hover:text-[#B59410] transition">Gallery</a>
+                <a href="contact.html" class="hover:text-[#B59410] transition">Contact</a>
+            </div>
+            <a href="contact.html" class="bg-[#B59410] text-white px-5 py-2.5 rounded text-sm uppercase tracking-wider font-semibold hover:bg-[#94780D] transition">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <section class="bg-[#2C2C2C] text-white py-16 text-center">
+        <h1 class="serif-font text-4xl font-bold mb-2">Our Story & Vision</h1>
+        <p class="text-sm tracking-widest text-amber-400 uppercase">The Creatives Behind Yaseen Ed</p>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left Side: Professional Image -->
+            <div class="overflow-hidden rounded-lg shadow-md border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=800" alt="Yaseen Ed Team Working" class="w-full h-[450px] object-cover hover:scale-105 transition duration-700">
+            </div>
+            
+            <!-- Right Side: Text Story -->
+            <div>
+                <h2 class="serif-font text-3xl font-bold mb-4 text-[#B59410]">Crafting Unforgettable Experiences</h2>
+                <div class="w-16 h-0.5 bg-[#B59410] mb-6"></div>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Yaseen Ed ek premier event decoration agency hai jo aapke special occasions ko ek grand luxury layout mein transform karne ke liye jani jati hai. Hum sirf phool aur light nahi lagate, balki hum aapke khwabon ko ek zinda roop dete hain.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Hamari core expertise grand wedding stages, vibrant pre-wedding traditional themes (Haldi/Mehendi), aur sleek corporate setups ko poori perfection ke sath design karne mein hai. Cinematic lighting aur high-end aesthetics hamare har project ki pehchan hain.
+                </p>
+                
+                <!-- Work Stats -->
+                <div class="grid grid-cols-3 gap-4 border-t border-gray-200 pt-6 text-center">
+                    <div>
+                        <h4 class="serif-font text-2xl font-bold text-[#B59410]">150+</h4>
+                        <p class="text-xs uppercase text-gray-500 tracking-wider font-semibold">Events Done</p>
+                    </div>
+                    <div>
+                        <h4 class="serif-font text-2xl font-bold text-[#B59410]">5+</h4>
+                        <p class="text-xs uppercase text-gray-500 tracking-wider font-semibold">Years Exp</p>
+                    </div>
+                    <div>
+                        <h4 class="serif-font text-2xl font-bold text-[#B59410]">100%</h4>
+                        <p class="text-xs uppercase text-gray-500 tracking-wider font-semibold">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1C1C1C] text-gray-400 py-8 text-center text-xs border-t border-gray-800">
+        <p>&copy; 2026 Yaseen Ed. All Rights Reserved. Crafted for Elegance.</p>
+    </footer>
+
+    <!-- Custom Interactivity Scripts Link -->
+    <script src="app.js" defer></script>
+</body>
+</html>
+
