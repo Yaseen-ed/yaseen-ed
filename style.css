@@ -140,3 +140,35 @@ nav a:hover::after {
         font-size:22px;
     }
 }
+/* Gallery Category Menu - Mobile Swipe */
+
+.filter-menu{
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+.filter-menu::-webkit-scrollbar{
+    display:none;
+}
+
+.filter-menu .gallery-btn{
+    flex:0 0 auto;
+    white-space:nowrap;
+}
+
+@media (max-width:768px){
+
+    .filter-menu{
+        justify-content:flex-start;
+        overflow-x:auto;
+        overflow-y:hidden;
+        padding-bottom:8px;
+    }
+
+    .gallery-btn{
+        font-size:12px;
+        padding:10px 18px;
+        border-radius:9999px;
+    }
+
+}
