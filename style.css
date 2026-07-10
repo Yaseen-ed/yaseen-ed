@@ -33,65 +33,7 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* Before/After Image Slider Styling */
-.slider-container {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
 
-.slider-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.img-before {
-    z-index: 1;
-}
-
-.img-after {
-    z-index: 2;
-    /* Shuruat mein aadha image dikhane ke liye clip path */
-    clip-path: inset(0 0 0 50%);
-}
-
-.slider-handle {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 4px;
-    height: 100%;
-    background: white;
-    z-index: 3;
-    cursor: ew-resize;
-    transform: translateX(-50%);
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.slider-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    background: var(--primary-gold);
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    pointer-events: none;
-}
 
 /* Smooth Image Hover in Gallery */
 .gallery-item img {
@@ -171,4 +113,46 @@ nav a:hover::after {
         border-radius:9999px;
     }
 
+}
+.featured-gallery{
+    text-align:center;
+    padding:70px 20px;
+    background:#fff;
+}
+
+.featured-gallery h2{
+    font-size:52px;
+    color:#2E8B57;
+    margin-bottom:40px;
+    font-family:'Playfair Display',serif;
+}
+
+.gallery-slider{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:40px 0;
+}
+
+.slider{
+    width:90%;
+    max-width:1000px;
+    height:500px;
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1s ease;
+}
+
+.slide.active{
+    opacity:1;
 }
